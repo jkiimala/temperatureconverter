@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="lampo.css">
+    <title>Lämpötilamuunnin</title>
+</head>
+<body>
+    <h1>Lämpötilamuunnin</h1>
+    
+    <select id="lammot" name="lammot">
+        <option value="celsius">Celsius &#8594; Fahrenheit</option>
+        <option value="fahrenheit">Fahrenheit &#8594; Celsius</option>
+    </select>
+    <p>Syötä lämpötila:</p>
+    
+    <input type="text" id="celsius" onfocus="this.value=''">
+    
+    <button onclick="muunnos()">Muunna</button>
+    
+    <div class="radio">    
+        <input type="radio" id="1desi" name="desimaali" value="1">
+        <label for="1desi">1 desimaali</label><br>
+        
+        <input type="radio" id="2desi" name="desimaali" value="2">
+        <label for="2desi">2 desimaalia</label><br>
+        
+        <input type="radio" id="3desi" name="desimaali" value="3">
+        <label for="3desi">3 desimaalia</label><br>
+    </div>
+    
+    <p>Muunnettu lämpötila:</p>
+    <input type="text" id="tulos" readonly>
+
+    <script src="lampo.js"></script>
+</body>
+</html>
