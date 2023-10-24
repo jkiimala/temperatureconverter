@@ -9,11 +9,17 @@ input[type="text"] {
 }
 
 p {
-    margin-bottom: 0%;
+    margin-bottom: 5px;
     margin-top: 10px;
+    
 }
 
 body {
     margin-left: 25px;
 }
 
+select {
+    height: 23px;
+    
+    
+}
